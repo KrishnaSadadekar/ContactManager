@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <title th:text="${title}">My Spring Boot App</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body class="banner">
+
+<div th:replace="(~{base:: header})">This is my header</div>
+<section>
+
+    <!-- About Us Content -->
+    <div class="container mt-5">
+        <h1>About Us</h1>
+        <p>Welcome to Smart Contact Manager, your go-to solution for organizing and managing contacts efficiently. Our platform is designed to simplify your contact management tasks, ensuring you stay connected with ease.</p>
+
+        <h2>Our Mission</h2>
+        <p>We are committed to providing a user-friendly, secure, and feature-rich contact management system that meets the diverse needs of individuals and businesses alike.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>User-friendly interface</li>
+            <li>Contact categorization and tagging</li>
+            <li>Import and export contacts</li>
+            <li>And much more...</li>
+        </ul>
+
+
+        <div class="contact__address">
+            <h2>Contact info</h2>
+            <ul>
+                <li>
+                    <h6><i class="fa fa-map-marker"></i> Address</h6>
+                    <p>160 Pennsylvania Ave NW, Washington, Castle, PA 16101-5161</p>
+                </li>
+                <li>
+                    <h6><i class="fa fa-phone"></i> Phone</h6>
+                    <p><span>125-711-811</span><span>125-668-886</span></p>
+                </li>
+                <li>
+                    <h6><i class="fa fa-headphones"></i> Support</h6>
+                    <p>Support.photography@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</section>
+
+</body>
+</html>
